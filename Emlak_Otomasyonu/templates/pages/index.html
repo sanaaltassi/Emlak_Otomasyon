@@ -1,0 +1,173 @@
+{% extends 'base.html' %} 
+
+<section id="showcase" >
+  <div class="container text-center" >
+    <div class="home-search p-5" style="background-color:darkblue;">
+      <div class="overlay p-5" style="background-color:darkblue;">
+        <h1 class="display-4 mb-4">Emlak Aramak Artık Çok Kolay</h1>
+        <p class="lead">
+          Mülk yönetimi, işletme, kontrol, bakım,
+          ve gayrimenkul ve fiziksel mülkiyetin gözetimi.
+          Bu, konut, ticari ve arazi gayrimenkullerini içerebilir.
+        </p>
+        <div class="search">
+          <form action="{% url 'search' %}">
+
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Anahtar kelimeler</label>
+                <input
+                  type="text"
+                  name="keywords"
+                  class="form-control"
+                  placeholder="Keyword (Pool, Garage, etc)"
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Şehir</label>
+                <input
+                  type="text"
+                  name="city"
+                  class="form-control"
+                  placeholder="City"
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="sr-only">Durum</label>
+                <select name="state" class="form-control">
+                  <option selected="true" disabled="disabled">Durum (Tümü)</option>
+                  {% anahtar için state_choices.items içindeki değer%}
+                    <option value="{{ key }}">{{ Değer }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label class="sr-only">Yatak Odaları</label>
+                <select name="bedrooms" class="form-control">
+                    <option selected="true" disabled="disabled">Yatak Odaları (Tümü)</option>
+                  {% anahtar için, bed_choices.items içindeki değer %}
+                  <option value="{{ key }}">{{ Değer }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <select name="price" class="form-control" id="type">
+                  <option selected="true" disabled="disabled"
+                    >Maksimum Fiyat (Herhangi biri)</option
+                  >
+                  <option value="{{ key }}">{{ Değer }}</option>
+
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-danger btn-block mt-4" type="submit">
+             Formu gönder
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- Listeler -->
+<section id="listings" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-3">En son Listeler</h3>
+    <div class="row">
+
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card listing-preview">
+              <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="" />
+              <div class="card-img-overlay">
+                <h2>
+                  <span class="badge badge-secondary text-white">${{ Fiyat.listesi | iç virgül}}</span>
+                </h2>
+              </div>
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <h4 class="text-primary">{{ listeleme.başlık }}</h4>
+                  <p>
+                    <i class="fas fa-map-marker text-secondary"></i> {{ listeleme.şehir  }} {{ listeleme.Durum  }},
+                    {{ listeleme.posta kodu }}
+                  </p>
+                </div>
+                <hr />
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-th-large"></i> Sqft: {{ listeleme.sqft }}
+                  </div>
+                  <div class="col-6"><i class="fas fa-car"></i> Garage: {{ listeleme.garaj }}</div>
+                </div>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6"><i class="fas fa-bed"></i> Bedrooms: {{ listeleme.yatak odaları }}</div>
+                  <div class="col-6"><i class="fas fa-bath"></i> Bathrooms: {{ listeleme.banyolar }}</div>
+                </div>
+                <hr />
+                <div class="row py-2 text-secondary">
+                  <div class="col-6"><i class="fas fa-user"></i> {{ listeleme.Emlakçı  }}</div>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <div class="col-6"><i class="fas fa-clock"></i> {{ listeleme.list_tarihi | zamandan beri }}</div>
+                </div>
+                <hr />
+                <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block"
+                  >Daha fazla bilgi</a
+                >
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="col-md-12">
+          <p>Liste Mevcut değil</p>
+        </div>
+      {% endif %}
+       </section>
+
+<section id="" class="py-5 text-white" style="background-color:black;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="fas fa-cogs fa-4x mr-4"></i>
+        <hr />
+        <h3>Danışmanlık servisleri</h3>
+        <p>
+           Yönetim danışmanlığı hizmetlerimiz, müşterilerimizin en kritik konularına odaklanır.
+           sorunlar ve fırsatlar: strateji, pazarlama, organizasyon, operasyonlar, teknoloji,
+           dönüşüm, dijital, gelişmiş analitik, kurumsal finans,
+           tüm sektörlerde ve coğrafyalarda birleşme ve satın almalar ve sürdürülebilirlik.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-home fa-4x mr-4"></i>
+        <hr />
+        <h3>Mülkiyet yönetimi</h3>
+        <p>
+           Mülk yönetimi, konutların günlük gözetimidir.
+           üçüncü taraf bir yüklenici tarafından ticari veya endüstriyel gayrimenkul.
+           Genel olarak, mülk yöneticileri günlük onarımlar ve devam eden bakım için sorumluluk alırlar.
+           güvenlik ve mülklerin bakımı. Genellikle yatırım amaçlı gayrimenkul sahipleri için çalışırlar.
+           apartman ve kat mülkiyeti kompleksleri, özel ev toplulukları, alışveriş merkezleri gibi
+           ve endüstri parkları.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-money-bill-alt fa-4x mr-4"></i>
+        <hr />
+        <h3>Kiralama & Satış</h3>
+        <p>
+           Kiralamak biraz güvenlik sağlayabilir çünkü evinize dönebileceğinizi bilirsiniz.
+           Bir ev satmak ve sonra başka bir ev satın almak maliyetlere neden olur,
+           bu yüzden evinizi kiraya vermek ve döndüğünüzde tekrar taşınmak daha ucuz olabilir.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
