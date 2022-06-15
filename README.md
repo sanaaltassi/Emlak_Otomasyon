@@ -13,3 +13,12 @@ Ana Sayfası:
 Hakkımızda Sayfası:
 
 <img width="942" alt="Emlak3" src="https://user-images.githubusercontent.com/47948105/173817917-e52a9fa9-e5ab-4f16-b2a4-0d54f35fc98a.PNG">
+
+
+Kayıt Ol Sayfası:
+<img width="947" alt="Emlak4" src="https://user-images.githubusercontent.com/47948105/173818283-6ccbb744-a065-4bf7-a0b8-04be6ad27e4f.PNG">
+
+
+Giriş Yap Sayfası:
+
+<img width="955" alt="Emlak5" src="https://user-images.githubusercontent.com/47948105/173818491-a2372c84-f3be-4a53-9c22-9dcaca410b67.PNG">
