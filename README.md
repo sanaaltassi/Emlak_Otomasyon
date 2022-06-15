@@ -4,5 +4,5 @@ Arka uçta Python Django Çerçevesi ve ön uçta HTML, CSS ve JavaScript kullan
 
 Ana Sayfası:
 
-<img width="749" alt="Emlak1" src="https://user-images.githubusercontent.com/47948105/173801207-a2625709-991a-4aae-9af9-dad9cb9ed18e.PNG">
+<img width="940" alt="Emlak0" src="https://user-images.githubusercontent.com/47948105/173802487-7fab094d-5f18-44f7-af91-00ab092e6400.PNG">
 <img width="943" alt="Emlak2" src="https://user-images.githubusercontent.com/47948105/173802066-47bd3027-3b6c-4307-818e-e00fd384bb72.PNG">
