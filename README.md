@@ -25,4 +25,4 @@ Giriş Yap Sayfası:
 <img width="949" alt="Emlak7" src="https://user-images.githubusercontent.com/47948105/173820574-f2dd41cd-b2da-4c2e-a6cc-36b86b727c0f.PNG">
 
 
-Bir kaç fotoğraf ekleyerek projeye bir bakış vermek istedim ve ana sayfalar fotoğrafları paylaşmak .
+Bir kaç fotoğraf ekleyerek projeye bir bakış vermek istedim ve ana sayfalar fotoğrafları paylaşmak istedim.
