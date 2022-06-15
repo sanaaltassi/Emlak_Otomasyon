@@ -8,3 +8,8 @@ Ana Sayfası:
 
 
 <img width="943" alt="Emlak2" src="https://user-images.githubusercontent.com/47948105/173802066-47bd3027-3b6c-4307-818e-e00fd384bb72.PNG">
+
+
+Hakkımızda Sayfası:
+
+<img width="942" alt="Emlak3" src="https://user-images.githubusercontent.com/47948105/173817917-e52a9fa9-e5ab-4f16-b2a4-0d54f35fc98a.PNG">
