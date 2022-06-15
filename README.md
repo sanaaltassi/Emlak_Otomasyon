@@ -4,7 +4,8 @@ Arka uçta Python Django Çerçevesi ve ön uçta HTML, CSS ve JavaScript kullan
 
 Ana Sayfası:
 
-<img width="940" alt="Emlak0" src="https://user-images.githubusercontent.com/47948105/173802487-7fab094d-5f18-44f7-af91-00ab092e6400.PNG">
+<img width="950" alt="Emlak00" src="https://user-images.githubusercontent.com/47948105/173819058-e2a08037-0b91-434c-83a0-97052a32e7ba.PNG">
+
 
 
 <img width="943" alt="Emlak2" src="https://user-images.githubusercontent.com/47948105/173802066-47bd3027-3b6c-4307-818e-e00fd384bb72.PNG">
@@ -21,4 +22,4 @@ Kayıt Ol Sayfası:
 
 Giriş Yap Sayfası:
 
-<img width="955" alt="Emlak5" src="https://user-images.githubusercontent.com/47948105/173818491-a2372c84-f3be-4a53-9c22-9dcaca410b67.PNG">
+<img width="949" alt="Emlak6" src="https://user-images.githubusercontent.com/47948105/173818794-cd6ae6e9-4414-4c97-bf91-58a4e1e1bd15.PNG">
