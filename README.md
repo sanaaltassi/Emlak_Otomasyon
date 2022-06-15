@@ -22,4 +22,4 @@ Kayıt Ol Sayfası:
 
 Giriş Yap Sayfası:
 
-<img width="949" alt="Emlak6" src="https://user-images.githubusercontent.com/47948105/173818794-cd6ae6e9-4414-4c97-bf91-58a4e1e1bd15.PNG">
+<img width="949" alt="Emlak7" src="https://user-images.githubusercontent.com/47948105/173820574-f2dd41cd-b2da-4c2e-a6cc-36b86b727c0f.PNG">
